@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+body{
+    background-color: rgb(204, 188, 188);
+}
+.container{
+    overflow-x: hidden;
+    margin: 30px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border-radius:10px 10px 10px 10px;
+    background-color: #fff;
+    margin-left: 0px;
+}
+.card-1{
+    width: 100%;
+    height:100%;
+}
+.card-img svg{
+    width: 100%;
+    border-radius:10px 10px 0px 0px;
+}
+.card-text{
+    display: flex;
+    flex-direction: column;
+    
+}
+.card-text h3{
+    padding:10px 0px;
+    margin:0px 10px;
+    width:100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color:hsl(223, 47%, 23%);
+}
+.card-text p{
+    padding-top: 10px 0px;
+    width: 100%;
+    text-align: center;
+    line-height: 2em;
+    padding: 10px 0px;
+    color: rgb(148, 147, 147);
+}
+.card-music{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0em 1em;
+    padding:1.4em 0px;
+    background-color:hsl(225, 100%, 98%);
+    border-radius:1.2em;
+}
+.music-txt{
+    margin-right: 5em;
+}
+.music-txt p{ 
+    color: rgb(177, 177, 177);
+}
+.music-link a{
+    margin-right: 2em;
+    color: blue;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding:2em 0px;
+    position: relative;
+}
+.pay-bt{
+    padding: 2em 0em;
+}
+.pay-bt a{
+    margin: 10px;
+    background-color: hsl(245, 75%, 52%);;
+    padding: 1em 6em;
+    color:#fff;
+    text-decoration: none;
+    border-radius:0.5em;
+    font-weight: 700;   
+    box-shadow: 0px 0px 10px 0px rgb(21, 25, 44); 
+}
+.cancel-bt{
+    padding: 0em 0em 2em 0em;
+    width: 100%;
+    text-align: center;
+}
+.cancel-bt a{
+    width: 100%;
+    font-weight: 900;    
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+    font-weight: 900;
+}
+@media (max-width:500px){
+    .pay-bt a{
+    padding: 1em 4em;
+    }
+    
+}
+@media (min-width:501px){
+    .container{
+        margin:50px;
+    }
+    .card{
+        width: 90%;
+    }
+
+    .card-img svg{
+        width: 100%;
+    }
+    .card-music{
+        margin-left: 0em;
+    }
+}
+@media (min-width:647px){
+    .container{
+        margin:120px;
+    }
+    .card-img svg{
+        width: 100%;
+    }
+}
+@media (min-width:1000px){
+    .container{
+        margin:100px;
+    }
+    .card{
+        width: 30%;
+    }
+}
